@@ -8,10 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>参数绑定</title>
+    <title>参数绑定(Bean)</title>
 </head>
 <body>
     <h3>参数绑定</h3>
-    <a href="param/testParam?username=hello&password=world">参数绑定</a>
+<%--    <a href="param/testParam?username=hello&password=world">参数绑定</a>--%>
+    <form action="param/saveAccount" method="post">
+        姓名：<input type="text" name="username"> <br>
+        密码：<input type="text" name="password"> <br>
+        金额：<input type="text" name="money"> <br>
+        <input type="submit" name="提交"> <br>
+    </form>
 </body>
 </html>

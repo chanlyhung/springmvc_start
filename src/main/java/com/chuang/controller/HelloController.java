@@ -30,6 +30,7 @@ public class HelloController {
     @RequestMapping(path="/requestMapping", params = {"username"})
     public String testRequestMapping(){
         System.out.println("requestMapping注解");
+
         return "success";
     }
 
